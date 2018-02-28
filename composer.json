@@ -1,0 +1,8 @@
+{
+	"name": "scouterna/simplesamlphp-module-scouterna-theme",
+	"description": "A simplesamlphp theme for the Guides and Scouts of Sweden.",
+	"type": "simplesamlphp-module",
+	"require": {
+		"simplesamlphp/composer-module-installer": "~1.0"
+	}
+}
