@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel='stylesheet' href="<?php echo SimpleSAML_Module::getModuleURL('themefeidernd/feidernd.css'); ?>" type='text/css' />
+	<link rel='stylesheet' href="<?php echo SimpleSAML_Module::getModuleURL('scouterna-theme/feidernd.css'); ?>" type='text/css' />
 	<!--[if IE]><style type="text/css">#login h1 a { margin-top: 35px; } #login #login_error { margin-bottom: 10px; }</style><![endif]--><!-- Curse you, IE! -->
 
 	<script type="text/javascript">
@@ -18,13 +18,13 @@
 <body class="login">
 
 <div id="logo">
-   <img alt="logo" src="<?php echo SimpleSAML_Module::getModuleURL('themefeidernd/logoscouterna.png') ?>" />
+   <img alt="logo" src="<?php echo SimpleSAML_Module::getModuleURL('scouterna-theme/logoscouterna.png') ?>" />
 </div>
 
 <div id="login">
 	<form name="loginform" id="loginform" action="?" method="post">
 		
-			<!--<img alt="logo" src="<?php echo SimpleSAML_Module::getModuleURL('themefeidernd/white_blue_L.png') ?>" />-->
+			<!--<img alt="logo" src="<?php echo SimpleSAML_Module::getModuleURL('scouterna-theme/white_blue_L.png') ?>" />-->
 		<h2>Inloggning</h2>
 		<!-- LOGGA FRÅN RÄTT ORGANISATION CMJ <p></p>-->
 		<p>
