@@ -41,7 +41,7 @@
 		<p class="submit">
 			<input type="submit" name="wp-submit" id="wp-submit" value="<?php echo $this->t('{login:login_button}'); ?> &raquo;" tabindex="100" />
 		</p>
-                <p><a href="https://www.scoutnet.se/request_password">Glomt losenordet - klicka har..</a></p>
+                <p><a href="https://www.scoutnet.se/request_password">Glömt lösenordet - klicka här.</a></p>
 
 
 <?php
