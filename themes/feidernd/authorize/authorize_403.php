@@ -26,12 +26,12 @@ header('HTTP/1.0 403 Forbidden');
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel='stylesheet' href="<?php echo SimpleSAML_Module::getModuleURL('themefeidernd/feidernd.css'); ?>" type='text/css' />
+	<link rel='stylesheet' href="<?php echo SimpleSAML_Module::getModuleURL('scouterna-theme/feidernd.css'); ?>" type='text/css' />
 </head>
 <body class="login">
 
 <div id="logo">
-   <img alt="logo" src="<?php echo SimpleSAML_Module::getModuleURL('themefeidernd/logoscouterna.png') ?>" />
+   <img alt="logo" src="<?php echo SimpleSAML_Module::getModuleURL('scouterna-theme/logoscouterna.png') ?>" />
 </div>
 
 <div id="login">
