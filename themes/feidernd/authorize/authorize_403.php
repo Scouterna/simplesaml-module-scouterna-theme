@@ -27,8 +27,8 @@ if (isset($state['SPMetadata'])) {
 	$entity = [];
 }
 
+$foundContact = null;
 if (isset($entity['contacts'])) {
-	$foundContact = null;
 	foreach ($entity['contacts'] as $contact) {
 		if (in_array($contact['contactType'], ['technical', 'support', 'administrative'])) {
 			$foundContact = $contact;
