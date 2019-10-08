@@ -36,7 +36,11 @@ header('HTTP/1.0 403 Forbidden');
 
 <div id="login">
 		<h2>Du saknar behörighet</h2>
-		<p>Du är inloggad men saknar behöighet för den här tjänsten. Läs mer på scoutid.se.</
+		<p>Du är inloggad men saknar behöighet för den här tjänsten. Kontakta administratören för
+			<a href="<?= $state['saml:RelayState'] ?>">
+				<?= $state['saml:RelayState'] ?>
+			</a>
+		</p>
 </div>
 
 </body>
