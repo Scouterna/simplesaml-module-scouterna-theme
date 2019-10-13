@@ -57,7 +57,7 @@ if (isset($entity['contacts'])) {
 
 	<div id="login">
 		<h2>Du saknar behörighet</h2>
-		<p>Du är inloggad men saknar behöighet för den här tjänsten.</p>
+		<p>Du är inloggad men saknar behörighet för den här tjänsten.</p>
 		<p>
 			Kontakta
 			<?php if (isset($foundContact)) : ?>
