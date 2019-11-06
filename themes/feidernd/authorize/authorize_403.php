@@ -15,13 +15,13 @@ if (!array_key_exists('StateId', $_REQUEST)) {
 $state = SimpleSAML_Auth_State::loadState($_REQUEST['StateId'], 'authorize:Authorize');
 
 $globalConfig = SimpleSAML_Configuration::getInstance();
-$t = new SimpleSAML_XHTML_Template($globalConfig, 'authorize:authorize_403.php');
+$template = new SimpleSAML_XHTML_Template($globalConfig, 'authorize:authorize_403.php');
 if (isset($state['Source']['auth'])) {
     $authUrl = SimpleSAML\Module::getModuleURL(
         'core/authenticate.php',
         ['as' => $state['Source']['auth']]
     );
-    $t->data['LogoutURL'] = "{$authUrl}&logout";
+    $template->data['LogoutURL'] = "{$authUrl}&logout";
 }
 
 //<editor-fold desc="$contactParagraph">
@@ -66,30 +66,23 @@ if (isset($foundContact)) {
 $themeUrl = SimpleSAML_Module::getModuleURL('scouterna-theme');
 
 echo <<<HTML
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
-
-<head>
-	<title>Du saknar behörighet</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel='stylesheet' href="{$themeUrl}/feidernd.css" type='text/css' />
-</head>
-
-<body class="login">
-
-	<div id="logo">
-		<img alt="logo" src="{$themeUrl}/logoscouterna.png" />
-	</div>
-
-	<div id="login">
-		<h2>Du saknar behörighet</h2>
-		<p>Du är inloggad men saknar behörighet för den här tjänsten.</p>
-		{$contactParagraph}
-	</div>
-
-</body>
-
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Du saknar behörighet</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel='stylesheet' href="{$themeUrl}/feidernd.css" type='text/css' />
+    </head>
+    <body class="login">
+        <div id="logo">
+            <img alt="logo" src="{$themeUrl}/logoscouterna.png" />
+        </div>
+        <div id="login">
+            <h2>Du saknar behörighet</h2>
+            <p>Du är inloggad men saknar behörighet för den här tjänsten.</p>
+            {$contactParagraph}
+        </div>
+    </body>
 </html>
 HTML;
