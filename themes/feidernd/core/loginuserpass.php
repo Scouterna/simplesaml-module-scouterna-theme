@@ -178,7 +178,7 @@ echo <<<HTML
                 </p>
                 {$errorDiv}
                 {$linkUl}
-                {$inputs}
+                {$inputsHtml}
             </form>
         </div>
         {$languagebarDiv}
