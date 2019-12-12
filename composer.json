@@ -3,6 +3,10 @@
 	"description": "A simplesamlphp theme for the Guides and Scouts of Sweden.",
 	"type": "simplesamlphp-module",
 	"require": {
+		"php": "^7.3",
 		"simplesamlphp/composer-module-installer": "~1.0"
+	},
+	"config": {
+		"sort-packages": true
 	}
 }
