@@ -151,15 +151,15 @@ echo <<<HTML
 	        <form name="loginform" id="loginform" action="?" method="post">
                 <h2>Inloggning</h2>
                 <p>
-					<label>Användarnamn</label>
-					<span class="tooltipqmark" data-tooltip="Medlemsnummer, personnummer, eller primär epostadress">
-						<img src="{$themeUrl}/questionmark.png" />
-					</span><br/>
-					<input type="text" name="username" id="username" class="input" {$usernameInputValueAttribute} size="20" tabindex="10" />
+		            <label>Användarnamn</label>
+		            <span class="tooltipqmark" data-tooltip="Medlemsnummer, personnummer, eller primär epostadress">
+		                <img src="{$themeUrl}/questionmark.png" />
+	                </span><br/>
+                    <input type="text" name="username" id="username" class="input" {$usernameInputValueAttribute} size="20" tabindex="10" />
                 </p>
                 <p>
                     <label>{$passwordLabel}</label><br/>
-					<input type="password" name="password" id="user_pass" class="input" value="" size="20" tabindex="20" />
+	                <input type="password" name="password" id="user_pass" class="input" value="" size="20" tabindex="20" />
                 </p>
                 <p>
                     <label>
