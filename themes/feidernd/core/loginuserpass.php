@@ -152,7 +152,7 @@ echo <<<HTML
                 <h2>Inloggning</h2>
                 <p>
 		            <label for="username">Användarnamn</label>
-		            <span class="tooltipqmark" data-tooltip="P.g.a. ett <a href="https://scouterna.statuspage.io/incidents/63xllr25kv9f">tillfälligt fel</a> kan du endast logga in med ditt medlemsnummer. Vi arbetar på att å†erställa inloggning med e-post.">
+		            <span class="tooltipqmark" data-tooltip="Medlemsnummer, personnummer, eller primär epostadress">
 		                <img src="{$themeUrl}/questionmark.png" />
 	                </span><br/>
                     <input type="text" name="username" id="username" class="input" {$usernameInputValueAttribute} size="20" tabindex="10" />
