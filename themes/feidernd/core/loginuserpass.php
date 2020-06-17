@@ -150,9 +150,9 @@ echo <<<HTML
         <div id="login">
 	        <form name="loginform" id="loginform" action="?" method="post">
                 <h2>Inloggning</h2>
-		<p>P.g.a. ett <a href="https://scouterna.statuspage.io/incidents/63xllr25kv9f">tillfälligt fel</a> kan du endast logga in med ditt medlemsnummer. Vi arbetar på att återställa inloggning med e-post."</p>
                 <p>
 		            <label for="username">Användarnamn</label>
+		            <span class="tooltipqmark" data-tooltip="Medlemsnummer, personnummer, eller primär epostadress">
 		                <img src="{$themeUrl}/questionmark.png" />
 	                </span><br/>
                     <input type="text" name="username" id="username" class="input" {$usernameInputValueAttribute} size="20" tabindex="10" />
