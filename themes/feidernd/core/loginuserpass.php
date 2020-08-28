@@ -189,6 +189,9 @@ echo <<<HTML
             <p>
                 Om du är medlem i <b>Nykterhetsrörelsens Scoutförbund</b> eller <b>Equmenia</b> kontakta <a href="mailto:scoutnet@scouterna.se">scoutnet@scouterna.se</a> för att få hjälp med att skaffa ett ScoutID.
             </p>
+            <P>
+                <a href="https://etjanster.scout.se/e-tjanster/scoutid/">Läs mer om ScoutID</a>
+            </P>
         </div>
         {$languagebarDiv}
     </body>
