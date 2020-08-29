@@ -180,6 +180,19 @@ echo <<<HTML
                 {$inputsHtml}
             </form>
         </div>
+        <div id="info">
+            <h2>Har du en inloggning?</h2>
+            <p>
+                För att logga in på den här e-tjänsten så behöver du ett ScoutID.
+                Det har du automatiskt om du är medlem i en scoutkår som är direktansluten till Scouterna eller tillhör Salt Scout.
+            </p>
+            <p>
+                Om du är medlem i <b>Nykterhetsrörelsens Scoutförbund</b> eller <b>Equmenia</b> kontakta <a href="mailto:scoutnet@scouterna.se">scoutnet@scouterna.se</a> för att få hjälp med att skaffa ett ScoutID.
+            </p>
+            <P>
+                <a href="https://etjanster.scout.se/e-tjanster/scoutid/">Läs mer om ScoutID</a>
+            </P>
+        </div>
         {$languagebarDiv}
     </body>
 </html>
